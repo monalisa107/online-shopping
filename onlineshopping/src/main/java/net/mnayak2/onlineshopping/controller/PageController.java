@@ -8,13 +8,33 @@ import org.springframework.web.servlet.ModelAndView;
 public class PageController {
 	
 	
-	@RequestMapping(value={"/","/show","/index"})
+	@RequestMapping(value={"/","/home","/index"})
 	public ModelAndView index()
 	{
 		ModelAndView mv=new ModelAndView("page");
-		mv.addObject("greeting","Welcome to Spring MVC");
+		mv.addObject("title","Home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
 	
 
+	@RequestMapping("/about")
+	public ModelAndView about()
+	{
+		ModelAndView mv=new ModelAndView("page");
+		mv.addObject("title","About Us");
+		mv.addObject("userClickAbout", true);
+		return mv;
+	}
+	
+	
+	@RequestMapping("/contact")
+	public ModelAndView contact()
+	{
+		ModelAndView mv=new ModelAndView("page");
+		mv.addObject("title","Contact Us");
+		mv.addObject("userClickContact", true);
+		return mv;
+	}
+	
 }
