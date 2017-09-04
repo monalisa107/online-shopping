@@ -7,14 +7,23 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>onlineshopping Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<properties>
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
-	
+
 	<dependencies>
 
+
+		<!-- Linking Backend -->
+		<dependency>
+
+			<groupId>net.mnayak2</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
 		<!-- javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -39,7 +48,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>

@@ -15,6 +15,9 @@
 
 
 	<context:component-scan base-package="net.mnayak2.onlineshopping.controller" />
+	
+	<context:component-scan base-package="net.mnayak2.shoppingbackend.daoimpl" />
+	
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
